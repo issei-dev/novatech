@@ -1,0 +1,67 @@
+<!-- File: index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FY2025 最優秀社員アワード | ノヴァテック株式会社</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="header-company" id="company-name">ノヴァテック株式会社</p>
+      <h1 class="site-title">FY2025 最優秀社員アワード</h1>
+      <p class="site-subtitle">― 今年度最も輝いた社員を、あなたの一票で選出します ―</p>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    <section class="section">
+      <h2 class="section-title"><span class="title-icon">🏆</span> エントリー候補者</h2>
+      <div id="candidates-container" class="candidates-grid"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title"><span class="title-icon">📊</span> 投票状況（ポイント）</h2>
+      <div id="chart-container" class="chart"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title"><span class="title-icon">📋</span> 投票ルール</h2>
+      <div class="rules-wrap">
+        <p class="rules-note">
+          投票者の役職に応じてポイントが加算されます。<br>
+          最終的な獲得ポイント数で最優秀賞を決定します。
+        </p>
+        <table class="rules-table">
+          <thead>
+            <tr><th>役職</th><th>ポイント</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>一般</td><td class="pt-cell">1 pt</td></tr>
+            <tr><td>リーダー</td><td class="pt-cell">2 pt</td></tr>
+            <tr><td>マネージャー</td><td class="pt-cell">3 pt</td></tr>
+            <tr><td>部長 / 室長</td><td class="pt-cell">5 pt</td></tr>
+            <tr><td>役員</td><td class="pt-cell">10 pt</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 ノヴァテック株式会社 All Rights Reserved.</p>
+    <p class="footer-note">※ 本サイトの投票データはブラウザのLocalStorageに保存されます。</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
